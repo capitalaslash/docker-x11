@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-RUN apt-get update && apt-get install -y x11-apps
+RUN apt-get update && apt-get install -qy x11-apps
 
 # Replace 1000 with your user / group id
 RUN export uid=1000 gid=1000 && \
